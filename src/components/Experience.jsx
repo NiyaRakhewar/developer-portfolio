@@ -23,30 +23,30 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className="text-white-100 text-[14px] pl-1 tracking-wider"
           >
             {point}
           </li>
@@ -57,18 +57,44 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const clickHandler = () => {
+    window.location.href = "/src/assets/Niharika_Rakhewar_Dev_Resume.pdf";
+  };
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+          className={`${styles.sectionHeadText} text-center`}
+        >
           Work Experience.
+          <button
+            className={`${styles.sectionSubText} text-center`}
+            style={{
+              border: "1px solid #915EFF",
+              color: "white",
+              backgroundColor: "#915EFF",
+              borderRadius: "0.4rem",
+              padding: "1.5% 2%",
+              fontSize: "medium",
+              margin: "2% 0%",
+              cursor: "pointer",
+            }}
+            onClick={clickHandler}
+          >
+            Download Resume
+          </button>
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

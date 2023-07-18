@@ -42,7 +42,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img
+            style={{ borderRadius: "50%" }}
+            src={
+              "https://yt3.ggpht.com/VgK4gmbkIfHkcdtcfz-eHWtUgU8YVOaSEhmzXK8qcq8h4OTDKKAoAwkCAsxd5pk1_8EPqi2HmV8=s900-c-k-c0x00ffffff-no-rj"
+            }
+            alt="logo"
+            className="w-9 h-9 object-contain"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Niharika &nbsp;
             <span className="sm:block hidden"> | Frontend Developer</span>
