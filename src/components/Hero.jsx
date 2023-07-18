@@ -15,15 +15,12 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1
-            className={`${styles.heroHeadText} text-white`}
-            style={{ fontSize: "35px" }}
-          >
+          <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Niharika Rakhewar</span>
           </h1>
           <p
             className={`${styles.heroSubText} mt-2 text-white-100`}
-            style={{ marginLeft: "2%" }}
+            // style={{ marginLeft: "2%" }}
           >
             Frontend Developer
           </p>
