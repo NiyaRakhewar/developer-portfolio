@@ -11,7 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-
+import Resume from "../assets/Niharika_Rakhewar_Dev_Resume.pdf";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -57,9 +57,9 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
-  const clickHandler = () => {
-    window.location.href = "/src/assets/Niharika_Rakhewar_Dev_Resume.pdf";
-  };
+  // const clickHandler = () => {
+  //   window.location.href = "/src/assets/Niharika_Rakhewar_Dev_Resume.pdf";
+  // };
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -87,9 +87,13 @@ const Experience = () => {
               margin: "2% 0%",
               cursor: "pointer",
             }}
-            onClick={clickHandler}
+            // onClick={clickHandler}
           >
-            Download Resume
+            <a href={Resume} download>
+              Download Resume
+            </a>
+
+            {/* Download Resume */}
           </button>
         </h2>
       </motion.div>
