@@ -74,7 +74,7 @@ const Experience = () => {
           }}
           className={`${styles.sectionHeadText} text-center`}
         >
-          Work Experience.
+          Work Experience
           <button
             className={`${styles.sectionSubText} text-center`}
             style={{
