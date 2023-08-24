@@ -14,6 +14,7 @@ import {
   git,
   carrent,
   jobit,
+  tripguide,
 } from "../assets";
 
 export const navLinks = [
