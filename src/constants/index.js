@@ -4,25 +4,16 @@ import {
   // creator,
   web,
   javascript,
-  // typescript,
+  typescript,
   html,
   css,
   reactjs,
   redux,
-  // tailwind,
+  tailwind,
   nodejs,
-  // mongodb,
   git,
-  // figma,
-  // docker,
-  // meta,
-  // starbucks,
-  // tesla,
-  // shopify,
   carrent,
   jobit,
-  tripguide,
-  // threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -73,10 +64,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
   {
     name: "React JS",
     icon: reactjs,
@@ -85,10 +76,10 @@ const technologies = [
     name: "Redux Toolkit",
     icon: redux,
   },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
   {
     name: "Node JS",
     icon: nodejs,
@@ -243,27 +234,27 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/NiyaRakhewar/ecommerce_website",
   },
-  // {
-  //   name: "Trip Advisor",
-  //   description:
-  //     "Explore continents, countries, and remarkable destinations with our Trip Advisor web app. Discover the world's best places, plan your trips, and get valuable recommendations for unforgettable travel experiences.",
-  //   tags: [
-  //     {
-  //       name: "reactjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "html",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/NiyaRakhewar/mcr7/tree/main",
-  // },
+  {
+    name: "Trip Advisor",
+    description:
+      "Explore continents, countries, and remarkable destinations with our Trip Advisor web app. Discover the world's best places, plan your trips, and get valuable recommendations for unforgettable travel experiences.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/NiyaRakhewar/mcr7/tree/main",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
